@@ -1,0 +1,16 @@
+{
+    "name": "ConfigDataBuilderDev",
+    "rootNamespace": "ConfigDataBuilderDev",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "ConfigData.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

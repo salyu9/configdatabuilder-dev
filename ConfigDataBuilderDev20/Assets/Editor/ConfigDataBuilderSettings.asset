@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9cab6a1cf94b9cab9a9f1756614107, type: 3}
   m_Name: ConfigDataBuilderSettings
   m_EditorClassIdentifier: 
-  sourceFolder: Assets/
+  sourceFolder: Assets/ConfigData
   assemblyName: ConfigData
-  assemblyNamespace: 
+  assemblyNamespace: ConfigDataDev
   assemblyOutputPath: Assets/ConfigData/ConfigData.dll
   dataOutputFolder: ConfigData/
   l10nCustomExporterType: 
