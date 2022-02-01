@@ -18,5 +18,7 @@ MonoBehaviour:
   assemblyOutputPath: Assets/ConfigData/ConfigData.dll
   dataOutputFolder: ConfigData/
   l10nCustomExporterType: 
-  customTypesAssemblies: []
-  importingAssemblies: []
+  customTypesAssemblies:
+  - ConfigDataBuilderDev.Base
+  importingAssemblies:
+  - ConfigDataBuilderDev.Base
