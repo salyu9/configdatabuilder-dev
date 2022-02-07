@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: ConfigDataBuilderSettings
   m_EditorClassIdentifier: 
   sourceFolder: Assets/ConfigData
-  assemblyName: ConfigData
+  assemblyName: Dev.ConfigData
   assemblyNamespace: ConfigDataDev
   assemblyOutputPath: Assets/ConfigData/ConfigData.dll
   dataOutputFolder: ConfigData/
   l10nCustomExporterType: 
   customTypesAssemblies:
   - ConfigDataBuilderDev.Base
-  importingAssemblies:
-  - ConfigDataBuilderDev.Base
+  importingAssemblies: []
