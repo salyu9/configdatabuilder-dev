@@ -17,16 +17,15 @@ namespace ConfigDataBuilderDev.Base
         }
     }
 
-    // Converter type for MyPoint, must implement IConfigValueConverter<MyPoint>
-    public class MyPointConverter : IConfigValueConverter<MyPoint>
+    // Converter type for MyPoint, must implement IMultiSegConfigValueConverter<MyPoint>
+    public class MyPointConverter : IMultiSegConfigValueConverter<MyPoint>
     {
         // Parse MyPoint from config string
-        public MyPoint Parse(string value)
+        public MyPoint Parse(string[] segs)
         {
-            var segs = value.Split(',');
             if (segs.Length != 2)
             {
-                throw new ArgumentException($"Cannot parse '{value}' to {nameof(MyPoint)}.");
+                throw new ArgumentException($"Cannot parse '{string.Join(",", segs)}' to {nameof(MyPoint)}.");
             }
             return new MyPoint(int.Parse(segs[0]), int.Parse(segs[1]));
         }
@@ -52,9 +51,5 @@ namespace ConfigDataBuilderDev.Base
         {
             return $"<{nameof(MyPoint)} X={value.X}, Y={value.Y}>";
         }
-
-        // Cannot be used in arrays/dictionaries due to separator conflict,
-        // so IsScalar should return false.
-        public bool IsScalar => false;
     }
 }
