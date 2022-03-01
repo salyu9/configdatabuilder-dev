@@ -1,13 +1,16 @@
 {
-    "name": "ConfigDataBuilderDev",
-    "rootNamespace": "ConfigDataBuilderDev",
-    "references": [],
+    "name": "ConfigDataBuilderDev.Editor",
+    "rootNamespace": "ConfigDataBuilderDev.Editor",
+    "references": [
+        "GUID:5e2cb0d973d0db441b4501bec9a43ac3",
+        "GUID:9918885f24996d243a39bb97886a2838"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Dev.ConfigData.dll"
+        "Newtonsoft.Json.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [],

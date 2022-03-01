@@ -1,0 +1,25 @@
+{
+  "asfsf": {
+    "Description": "啊",
+    "L10nArray": [
+      "测试1",
+      "测试2",
+      "测试3"
+    ],
+    "L10nList": [
+      "测试1",
+      "测试2",
+      "测试3"
+    ]
+  },
+  "sfe": {
+    "Description": "事",
+    "L10nArray": [],
+    "L10nList": []
+  },
+  "s23": {
+    "Description": "的2",
+    "L10nArray": [],
+    "L10nList": []
+  }
+}

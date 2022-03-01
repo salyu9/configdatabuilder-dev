@@ -16,7 +16,7 @@ MonoBehaviour:
   assemblyNamespace: ConfigData
   assemblyOutputPath: Assets/ConfigData/Dev.ConfigData.dll
   dataOutputFolder: ConfigData/
-  l10nCustomExporterType: 
+  l10nCustomExporterType: ConfigDataBuilderDev.Editor.JsonL10nExporter
   customTypesAssemblies:
   - ConfigDataBuilderDev.Base
   importingAssemblies: []
