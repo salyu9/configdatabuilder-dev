@@ -5,7 +5,7 @@ using Untitled.ConfigDataBuilder.Base;
 
 namespace ConfigDataBuilderDev.Base
 {
-    [ConfigValueConverter(typeof(MyColorConverter))]
+    [ConfigValueConverter(typeof(MyColorConverter), "my-color")]
     public class MyColor
     {
         public Color Color { get; }
@@ -25,12 +25,12 @@ namespace ConfigDataBuilderDev.Base
         // Parse MyColor from config string
         public MyColor Parse(string value)
         {
-            if (ColorUtility.TryParseHtmlString(value, out var color)) {
-                return new MyColor(color);
-            }
-            else {
-                throw new ArgumentException($"Cannot parse '{value}' to {nameof(MyColor)}");
-            }
+            return value switch {
+                "red"   => Color.red,
+                "green" => Color.green,
+                "blue"  => Color.blue,
+                _       => throw new ArgumentOutOfRangeException(nameof(value), value, null)
+            };
         }
 
         // Write MyColor value to exported config data
