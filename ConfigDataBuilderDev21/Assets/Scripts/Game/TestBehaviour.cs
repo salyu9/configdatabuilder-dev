@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-namespace ConfigDataBuilderDev
+namespace ConfigDataBuilderDev.Game
 {
     public class TestBehaviour : MonoBehaviour
     {
@@ -45,6 +45,16 @@ namespace ConfigDataBuilderDev
             foreach (var asm in AppDomain.CurrentDomain.GetAssemblies()) {
                 Debug.Log(asm.FullName);
             }
+        }
+
+        [DebugMenu]
+        private void TestIdentifier()
+        {
+            foreach (var config in 测试标识符Config.AllConfig()) {
+                Debug.Log(config.名字);
+                Debug.Log(config._123);
+            }
+            Debug.Log(测试标识符Config.From名字("a"));
         }
 
         private void OnGUI()

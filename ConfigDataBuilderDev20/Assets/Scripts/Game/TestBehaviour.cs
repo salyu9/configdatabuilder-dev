@@ -47,6 +47,16 @@ namespace ConfigDataBuilderDev.Game
             }
         }
 
+        [DebugMenu]
+        private void TestIdentifier()
+        {
+            foreach (var config in 测试标识符Config.AllConfig()) {
+                Debug.Log(config.名字);
+                Debug.Log(config._123);
+            }
+            Debug.Log(测试标识符Config.From名字("a"));
+        }
+
         private void OnGUI()
         {
             var width = 400f;
