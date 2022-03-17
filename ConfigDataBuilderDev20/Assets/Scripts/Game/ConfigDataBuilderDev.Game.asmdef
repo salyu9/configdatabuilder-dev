@@ -1,7 +1,9 @@
 {
     "name": "ConfigDataBuilderDev.Game",
     "rootNamespace": "ConfigDataBuilderDev.Game",
-    "references": [],
+    "references": [
+        "GUID:9918885f24996d243a39bb97886a2838"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
