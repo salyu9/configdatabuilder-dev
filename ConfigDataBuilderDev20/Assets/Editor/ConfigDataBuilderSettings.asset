@@ -20,6 +20,7 @@ MonoBehaviour:
   - ConfigDataBuilderDev.Base
   importingAssemblies: []
   publicConstructors: 0
+  flagRowCount: 2
   dataExportType: 0
   dataOutputFolder: ConfigData/
   autoInit: 1
